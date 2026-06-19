@@ -22,9 +22,6 @@ def criar_checkout():
     link_fake = "https://www.mercadopago.com.br/checkout/v1/redirect?pref_id=TESTE123"
     
     return jsonify({
-        "url_checkout": link_fake,
+        "url": link_fake,
         "plano_escolhido": plano
     })
-
-if __name__ == '__main__':
-    app.run()
